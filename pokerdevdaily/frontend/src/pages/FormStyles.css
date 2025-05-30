@@ -1,0 +1,145 @@
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+button[type="submit"]:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.success-message {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-container p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}
+
+/* Styles for SessionForm specific elements */
+.session-form .form-actions {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  margin-top: 1rem;
+}
+
+.session-form .form-actions .cancel-button {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem; /* Match submit button padding */
+  font-size: 1rem; /* Match submit button font size */
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  flex-grow: 0; /* Don't grow like the submit button if it's also flexed */
+  width: auto; /* Override 100% width from button[type="submit"] */
+}
+
+.session-form .form-actions .cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.session-form .form-actions .cancel-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.session-form .form-actions button[type="submit"] {
+  flex-grow: 1; /* Allow submit button to take more space if needed */
+}
+
+/* Adjust textarea width */
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: inherit; /* Ensure textarea uses the same font */
+  font-size: inherit;   /* Ensure textarea uses the same font size */
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}

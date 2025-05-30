@@ -1,0 +1,102 @@
+/* Keep existing styles for reference or potential reuse, but new layout might override them */
+.App {
+  /* text-align: center; */ /* Overridden by more specific styles if any */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */ /* May not be needed with new layout */
+  padding: 20px; /* Example padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New styles for layout */
+.App-nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.App-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App-nav ul li {
+  margin: 0 1rem;
+}
+
+.App-nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.App-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.App-main {
+  padding: 1rem;
+  /* Centering content if needed, but pages might control their own layout */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+}
+
+/* Styles for placeholder Home and Dashboard pages */
+div > h1, div > h2 { /* Quick styling for placeholder page titles */
+  text-align: center;
+  color: #333;
+}
+div > p { /* Quick styling for placeholder page paragraphs */
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+}
+div > p > a {
+  color: #007bff;
+}
+div > button { /* Basic button styling for logout */
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+div > button:hover {
+  background-color: #0056b3;
+}

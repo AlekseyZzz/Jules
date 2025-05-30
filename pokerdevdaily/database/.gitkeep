@@ -1,0 +1,5 @@
+# This directory can be used for:
+# - SQL scripts (e.g., initial schema setup if not using migrations, complex queries)
+# - Entity-Relationship Diagrams (ERDs)
+# - Docker Compose setup for the database (e.g., docker-compose.yml for PostgreSQL)
+# - Database backup and restore scripts

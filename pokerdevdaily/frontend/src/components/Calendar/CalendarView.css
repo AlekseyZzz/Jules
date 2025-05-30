@@ -1,0 +1,109 @@
+.calendar-container {
+  max-width: 600px; /* Adjust as needed */
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.calendar-container h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom styles for react-calendar */
+.custom-calendar {
+  border: none; /* Remove default border if container has one */
+  border-radius: 8px; /* Match container */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style for days with sessions */
+.day-with-session {
+  background-color: #a6e3a1 !important; /* Light green - !important to override library styles if needed */
+  border-radius: 50% !important; /* Make it a circle or rounded square */
+  color: #155724 !important; /* Darker green text for contrast */
+  font-weight: bold;
+}
+
+/* Ensure the content (day number) within the tile is centered if using circular background */
+.react-calendar__tile.day-with-session abbr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure abbr fills the tile for centering */
+}
+
+
+/* General tile styling (optional, if you want to change default look) */
+.react-calendar__tile {
+  padding: 0.5em 0.5em;
+  height: 50px; /* Adjust tile height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #d10000; /* Example: make weekends red */
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: #999; /* Dim days from other months */
+}
+
+.react-calendar__navigation button {
+  font-size: 1.2em;
+  padding: 0.5em;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0.2em;
+}
+.react-calendar__navigation button:hover {
+  background-color: #e0e0e0;
+}
+.react-calendar__navigation button:disabled {
+  background-color: #f8f8f8;
+  color: #ccc;
+}
+
+/* Legend styling */
+.legend {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.legend-item {
+  display: inline-flex; /* Use flex to align color box and text */
+  align-items: center; /* Vertically align items in the flex container */
+  margin: 0 0.5rem;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  vertical-align: middle; /* Good for inline-block if not using flex */
+}
+
+.day-with-session-legend {
+  background-color: #a6e3a1; /* Match the highlight color */
+  border-radius: 50%; /* Match shape if applicable */
+}
+
+.error-message { /* Shared error message style */
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}

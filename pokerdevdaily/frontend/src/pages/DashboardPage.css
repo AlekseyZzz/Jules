@@ -1,0 +1,65 @@
+.dashboard-container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.logout-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.add-session-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem; /* Space before the list or form */
+  display: block; /* Make it a block to center or control width */
+  /* margin-left: auto; */ /* Uncomment to push to right if desired */
+  /* margin-right: auto; */ /* Uncomment to center if container is wider */
+}
+
+.add-session-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-content {
+  /* Layout can be adjusted here, e.g., using flex or grid if needed */
+}
+
+/* If SessionForm is directly in DashboardPage, it might inherit some global styles.
+   If specific layout for the form within the dashboard is needed, add here.
+   For example, to center the form if it's not full width: */
+.dashboard-content > .session-form { /* Assuming SessionForm has 'session-form' class */
+  max-width: 600px; /* Or desired width */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem; /* Space before the list */
+}

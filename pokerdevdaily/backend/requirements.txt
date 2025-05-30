@@ -1,0 +1,9 @@
+# Python dependencies will be listed here
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-JWT-Extended
+Werkzeug
+python-dotenv
+psycopg2-binary # For PostgreSQL, if/when used later
+gunicorn # For production server, if/when used later

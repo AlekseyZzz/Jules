@@ -1,0 +1,117 @@
+.session-list-container {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.session-list-container h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.refresh-button {
+  background-color: #17a2b8; /* Bootstrap info color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: block; /* Or inline-block if preferred */
+  margin-left: auto; /* To push to the right if container allows */
+  margin-right: 0; /* To push to the right if container allows */
+}
+
+.refresh-button:disabled {
+  background-color: #aaa;
+}
+
+.refresh-button:hover:not(:disabled) {
+  background-color: #138496;
+}
+
+.session-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.session-table th, .session-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.session-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #555;
+}
+
+.session-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.session-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.session-table .notes-cell {
+  max-width: 200px; /* Limit width of notes */
+  white-space: pre-wrap; /* Wrap text and preserve whitespace */
+  word-break: break-word;
+}
+
+.session-table .actions-cell {
+  text-align: center;
+}
+
+.session-table .actions-cell button {
+  margin: 0.25rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.session-table .edit-btn {
+  background-color: #ffc107; /* Bootstrap warning color */
+  color: #212529;
+}
+.session-table .edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.session-table .delete-btn {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white;
+}
+.session-table .delete-btn:hover {
+  background-color: #c82333;
+}
+
+.result-positive {
+  color: green;
+  font-weight: bold;
+}
+
+.result-negative {
+  color: red;
+  font-weight: bold;
+}
+
+.error-message { /* Ensure error messages are styled if not already global */
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
